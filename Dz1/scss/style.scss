@@ -1,0 +1,85 @@
+.task_1 {
+  & > div > input:checked + label {
+    color: red;
+  }
+}
+.task_2 {
+  list-style: none;
+  & > li {
+    &:nth-child(3n) {
+      color: yellow;
+    }
+    &:nth-child(5n):hover {
+      background-color: purple;
+    }
+    &:before {
+      content: "";
+      background-image: url("https://cdn-icons-png.flaticon.com/512/1017/1017466.png");
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      display: inline-block;
+      width: 25px;
+      height: 20px;
+    }
+    & > span {
+      display: inline-block;
+      &:first-letter {
+        color: red;
+        font-size: 20px;
+      }
+    }
+  }
+}
+.task_3 {
+  p.new:before {
+    content: "jlkll/,./";
+  }
+  abbr {
+    display: inline-block;
+    width: 30px;
+  }
+  abbr:first-line {
+    display: inline-block;
+    color: red;
+  }
+  div:before {
+    content: "adda";
+  }
+  div:first-letter {
+    color: red;
+  }
+  a:hover:before {
+    content: "+";
+  }
+}
+.task_4 {
+  background: repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30% 50px);
+  a[href*="htmlweb"] {
+    background: purple;
+  }
+  div > a[href*="htmlweb"]:first-child {
+    background: radial-gradient(
+      circle at bottom,
+      #333,
+      #333 50%,
+      #eee 75%,
+      #333 75%
+    );
+  }
+  div div a[href$="/css"]:hover {
+    border-top: 5px solid orange;
+    border-left: 5px solid orange;
+    border-bottom: 5px solid #333;
+    border-right: 5px solid #333;
+    border-radius: 3px 15px 3px 15px;
+  }
+  a ~ a:visited {
+    color: yellow;
+  }
+  div > a:last-child:focus {
+    font-weight: bold;
+    color: red;
+    background: green;
+  }
+}

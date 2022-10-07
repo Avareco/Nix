@@ -1,0 +1,91 @@
+.task_1 > div > input:checked + label {
+  color: red;
+}
+
+.task_2 {
+  list-style: none;
+}
+
+.task_2 > li:nth-child(3n) {
+  color: yellow;
+}
+
+.task_2 > li:nth-child(5n):hover {
+  background-color: purple;
+}
+
+.task_2 > li:before {
+  content: "";
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1017/1017466.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+}
+
+.task_2 > li > span {
+  display: inline-block;
+}
+
+.task_2 > li > span:first-letter {
+  color: red;
+  font-size: 20px;
+}
+
+.task_3 p.new:before {
+  content: "jlkll/,./";
+}
+
+.task_3 abbr {
+  display: inline-block;
+  width: 30px;
+}
+
+.task_3 abbr:first-line {
+  display: inline-block;
+  color: red;
+}
+
+.task_3 div:before {
+  content: "adda";
+}
+
+.task_3 div:first-letter {
+  color: red;
+}
+
+.task_3 a:hover:before {
+  content: "+";
+}
+
+.task_4 {
+  background: repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30% 50px);
+}
+
+.task_4 a[href*="htmlweb"] {
+  background: purple;
+}
+
+.task_4 div > a[href*="htmlweb"]:first-child {
+  background: radial-gradient(circle at bottom, #333, #333 50%, #eee 75%, #333 75%);
+}
+
+.task_4 div div a[href$="/css"]:hover {
+  border-top: 5px solid orange;
+  border-left: 5px solid orange;
+  border-bottom: 5px solid #333;
+  border-right: 5px solid #333;
+  border-radius: 3px 15px 3px 15px;
+}
+
+.task_4 a ~ a:visited {
+  color: yellow;
+}
+
+.task_4 div > a:last-child:focus {
+  font-weight: bold;
+  color: red;
+  background: green;
+}
